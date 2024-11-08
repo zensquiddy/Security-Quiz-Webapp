@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% set active_page = "Quiz" %}
+
+{% block title %}Quiz{% endblock %}
+
+{% block content %}
+
+<!--page content-->
+	<br>
+	<!--<h2>{{ question number}}</h2> -->
+	<br>
+	<!--<h2>{{ question }}</h2> -->
+	<br>
+	
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" >a
+		<label class="form-check-label" for="radio1"></label>
+	</div>
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">b
+		<label class="form-check-label" for="radio2"></label>
+	</div>
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">c
+		<label class="form-check-label" for="radio2"></label>
+	</div>
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">d
+		<label class="form-check-label" for="radio2"></label>
+	</div>
+
+{% endblock %}
