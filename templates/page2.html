@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% set active_page = "Page2" %}
+
+{% block title %}Page2{% endblock %}
+
+{% block content %}
+
+	<!--page content-->
+	<h2> Do you click on every link you see? </h2>
+	
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" >
+		<label class="form-check-label" for="radio1"> Of Course! </label>
+	</div>
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+		<label class="form-check-label" for="radio2"> Yeah sometimes. </label>
+	</div>
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+		<label class="form-check-label" for="radio2"> No I don't trust those links. </label>
+	</div>
+	<div class="form-check">
+		<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+		<label class="form-check-label" for="radio2"> Most times if it looks good enough. </label>
+	</div>
+	
+	<div class="d-flex justify-content-center bg-white mb-1">
+		<button type="submit" class="btn btn-dark btn-md p-2" onclick="document.location='/P3'">Next</button>
+	</div>
+
+{% endblock %}

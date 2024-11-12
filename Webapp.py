@@ -17,8 +17,23 @@ def quiz():
     
 @app.route('/E')
 def end():
-    return render_temaple('end.html')
-
+    return render_template('end.html')
+    
+@app.route('/P2')
+def page2():
+    return render_template('page2.html')
+    
+@app.route('/P3')
+def page3():
+    return render_template('page3.html')    
+    
+@app.route('/P4')
+def page4():
+    return render_template('page4.html')
+    
+@app.route('/P5')
+def page5():
+    return render_template('page5.html')    
 
 if __name__ == '__main__':
     app.run(debug=True) # change to False when running in producti
