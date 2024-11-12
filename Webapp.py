@@ -17,6 +17,7 @@ def quiz():
     
 @app.route('/E')
 def end():
+
     return render_temaple('end.html')
 
 
