@@ -14,6 +14,10 @@ def home():
 @app.route('/Q')
 def quiz():
     return render_template('quiz.html')
+    
+@app.route('/E')
+def end():
+    return render_temaple('end.html')
 
 
 if __name__ == '__main__':
