@@ -17,14 +17,17 @@ def quiz():
     
 @app.route('/E')
 def end():
+    
     return render_template('end.html')
     
 @app.route('/P2')
 def page2():
+
     return render_template('page2.html')
     
 @app.route('/P3')
 def page3():
+  
     return render_template('page3.html')    
     
 @app.route('/P4')

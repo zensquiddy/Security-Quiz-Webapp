@@ -10,26 +10,27 @@
 
 	<h2> Do you use the same password for every account you own? </h2>
 
-	
-	<div class="form-check">
-		<input type="radio" class="form-check-input" id="radio1" name="optradio1" value="option1">
-		<label class="form-check-label" for="radio1"> Of course! </label>
-	</div>
-	<div class="form-check">
-		<input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option2">
-		<label class="form-check-label" for="radio2"> Some have the same password </label>
-	</div>
-	<div class="form-check">
-		<input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option2">
-		<label class="form-check-label" for="radio2"> Like one or two have the same password </label>
-	</div>
-	<div class="form-check">
-		<input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option2">
-		<label class="form-check-label" for="radio2"> No I use a different password for each account </label>
-	</div>
-	
-	<div class="d-flex justify-content-center bg-white mb-1">
-		<button type="submit" class="btn btn-dark btn-md p-2" onclick="document.location='/P2'">Next</button>
-	</div>
+	<form action="/P2">
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio1" name="optradio1" value="option1">
+        <label class="form-check-label" for="radio1"> Of course! </label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio1" value="option2">
+        <label class="form-check-label" for="radio2"> Some have the same password </label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio3" name="optradio1" value="option3">
+        <label class="form-check-label" for="radio3"> Like one or two have the same password </label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio4" name="optradio1" value="option4">
+        <label class="form-check-label" for="radio4"> No I use a different password for each account </label>
+    </div>
+    
+    <div class="d-flex justify-content-center bg-white mb-1">
+        <button type="submit" class="btn btn-dark btn-md p-2">Next</button>
+    </div>
+	</form>
 
 {% endblock %}
