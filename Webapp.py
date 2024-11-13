@@ -34,6 +34,7 @@ def end():
     
 @app.route('/P2', methods=['GET', 'POST'])
 def page2():
+    
     return render_template('page2.html')
     
 @app.route('/P3', methods=['GET', 'POST'])
