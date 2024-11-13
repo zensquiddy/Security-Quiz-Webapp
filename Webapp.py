@@ -20,7 +20,7 @@ def home():
     
 @app.route('/Q', methods=['GET', 'POST'])
 def quiz():
-    
+    session["optradio1"] = request.form["optradio1"]
     return render_template('quiz.html')
     
 @app.route('/Redo')
@@ -29,25 +29,46 @@ def Redo():
     
 @app.route('/E')
 def end():
+    points = 0
+
+    if session["optradio1"] == "option4":
+        question1 = "correct"
+        points = points + 1
+    else :
+        question1 = "incorrect"
+        points = points + 0
+
+    if session["optradio2"] == "option3":
+        question1 = "correct"
+        points = points + 1
+    else :
+        question1 = "incorrect"
+        points = points + 0
+    
+    
+    
+    
     session.clear()
     return render_template('end.html')
     
 @app.route('/P2', methods=['GET', 'POST'])
 def page2():
-    
+    session["optradio2"] = request.form["optradio2"]
     return render_template('page2.html')
     
 @app.route('/P3', methods=['GET', 'POST'])
 def page3():
-  
+    session["optradio3"] = request.form["optradio3"]
     return render_template('page3.html')    
     
 @app.route('/P4', methods=['GET','POST'])
 def page4():
+    session["optradio4"] = request.form["optradio4"]
     return render_template('page4.html')
     
 @app.route('/P5', methods=['GET','POST'])
 def page5():
+    session["optradio5"] = request.form["optradio5"]
     return render_template('page5.html')    
 
 if __name__ == '__main__':
