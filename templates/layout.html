@@ -26,12 +26,14 @@
 			<!--page content-->
 			{% block content %}{% endblock %}
 		</div>
+		
 		<p id="demo">0</p>
 		<script>
 		var c = 0;
 		function myCounter() {
 			document.getElementById("demo").innerHTML = ++c;
 		}
+		myTimer = setInterval(myCounter, 1000)
 		</script> 
 	</body>
 </html>
