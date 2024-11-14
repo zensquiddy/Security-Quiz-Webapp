@@ -10,17 +10,9 @@ app = Flask(__name__)
 # This is something random you generate.  
 # For more info see: https://flask.palletsprojects.com/en/1.1.x/config/#SECRET_KEY
 
-<<<<<<< HEAD
-'''app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
-                                     #The value should be set on the server. 
-                                     #To run locally, set in env.bat (env.sh on Macs) and include that file in gitignore so the secret key is not made public.
-'''
-=======
 app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
 #The value should be set on the server. 
 #To run locally, set in env.bat (env.sh on Macs) and include that file in gitignore so the secret key is not made public.
-
->>>>>>> c066d7f9d0da4d426a2e656e8f45031548b440dd
 @app.route('/')
 def home():
     return render_template('home.html')

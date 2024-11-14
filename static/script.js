@@ -6,6 +6,7 @@ function overTimer() {
       sessionStorage.timecount = 1;
     }
     document.getElementById("result").innerHTML = sessionStorage.timecount
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }	else {
+	  document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
