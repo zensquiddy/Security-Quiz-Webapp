@@ -69,10 +69,10 @@ def end():
         points = points + 0
         
     qst1 = "Question 1 is " + question1
-    qst2 = "Question 1 is " + question2
-    qst3 = "Question 1 is " + question3
-    qst4 = "Question 1 is " + question4
-    qst5 = "Question 1 is " + question5
+    qst2 = "Question 2 is " + question2
+    qst3 = "Question 3 is " + question3
+    qst4 = "Question 4 is " + question4
+    qst5 = "Question 5 is " + question5
         
     score = str(points) + "/5"
     session.clear()
