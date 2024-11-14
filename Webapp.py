@@ -42,36 +42,42 @@ def end():
         points = points + 0
 
     if session["optradio2"] == "option3":
-        question1 = "correct"
+        question2 = "correct"
         points = points + 1
     else :
-        question1 = "incorrect"
+        question2 = "incorrect"
         points = points + 0    
     
     if session["optradio3"] == "option1":
-        question1 = "correct"
+        question3 = "correct"
         points = points + 1
     else :
-        question1 = "incorrect"
+        question3 = "incorrect"
         points = points + 0
      
     if session["optradio4"] == "option3":
-        question1 = "correct"
+        question4 = "correct"
         points = points + 1
     else :
-        question1 = "incorrect"
+        question4 = "incorrect"
         points = points + 0
         
     if session["optradio5"] == "option4":
-        question1 = "correct"
+        question5 = "correct"
         points = points + 1
     else :
-        question1 = "incorrect"
+        question5 = "incorrect"
         points = points + 0
         
+    qst1 = "Question 1 is " + question1
+    qst2 = "Question 1 is " + question2
+    qst3 = "Question 1 is " + question3
+    qst4 = "Question 1 is " + question4
+    qst5 = "Question 1 is " + question5
         
+    score = str(points) + "/5"
     session.clear()
-    return render_template('end.html')
+    return render_template('end.html', Result=score,answer1=qst1, answer2=qst2, answer3=qst3, answer4=qst4, answer5=qst5)
     
 @app.route('/P2', methods=['GET', 'POST'])
 def page2():
