@@ -8,7 +8,7 @@
 
 	<!--page content-->
 	<h2> Do you click on every link you see? </h2>
-	<form action="/P3">
+	<form action={{ url_for("page3") }} method ="post">
 	<div class="form-check">
 		<input type="radio" class="form-check-input" id="radio1" name="optradio2" value="option1" >
 		<label class="form-check-label" for="radio1"> Of Course! </label>
@@ -18,11 +18,11 @@
 		<label class="form-check-label" for="radio2"> Yeah sometimes. </label>
 	</div>
 	<div class="form-check">
-		<input type="radio" class="form-check-input" id="radio2" name="optradio2" value="option2">
+		<input type="radio" class="form-check-input" id="radio3" name="optradio2" value="option3">
 		<label class="form-check-label" for="radio2"> No I don't trust those links. </label>
 	</div>
 	<div class="form-check">
-		<input type="radio" class="form-check-input" id="radio2" name="optradio2" value="option2">
+		<input type="radio" class="form-check-input" id="radio4" name="optradio2" value="option4">
 		<label class="form-check-label" for="radio2"> Most times if it looks good enough. </label>
 	</div>
 	
