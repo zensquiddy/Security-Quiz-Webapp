@@ -13,7 +13,6 @@ app = Flask(__name__)
 app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
 #The value should be set on the server. 
 #To run locally, set in env.bat (env.sh on Macs) and include that file in gitignore so the secret key is not made public.
-
 @app.route('/')
 def home():
     return render_template('home.html')
