@@ -15,6 +15,7 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 #To run locally, set in env.bat (env.sh on Macs) and include that file in gitignore so the secret key is not made public.
 @app.route('/')
 def home():
+    session.clear()
     return render_template('home.html')
     
 @app.route('/Q', methods=['GET', 'POST'])
@@ -32,7 +33,7 @@ def end():
         session["optradio5"] = request.form["optradio5"]
         
     points = 0
-
+    print(session)
     if session["optradio1"] == "option4":
         question1 = "correct"
         points = points + 1
@@ -75,7 +76,7 @@ def end():
     qst5 = "Question 5 is " + question5
         
     score = str(points) + "/5"
-    session.clear()
+    
     return render_template('end.html', Result=score,answer1=qst1, answer2=qst2, answer3=qst3, answer4=qst4, answer5=qst5)
     
 @app.route('/P2', methods=['GET', 'POST'])
